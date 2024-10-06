@@ -1,0 +1,100 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"USCC": {
+			"bsonType": "string",
+			"description": "唯一标识",
+			"label": "唯一标识",
+			"foreignKey":"enterprise.USCC",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"runstatus": {
+			"bsonType": "string",
+			"description": "运营状态",
+			"label": "运营状态",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"worknum": {
+			"bsonType": "string",
+			"description": "从业人员数",
+			"label": "从业人员数",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"totolmoney": {
+			"bsonType": "string",
+			"description": "旅游总收入",
+			"label": "旅游总收入",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"tikitmoney": {
+			"bsonType": "string",
+			"description": "门票收入",
+			"label": "门票收入",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"jiedaipeoplenum": {
+			"bsonType": "string",
+			"description": "接待游客人次",
+			"label": "接待游客人次",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"freetikitnum": {
+			"bsonType": "string",
+			"description": "免票人次",
+			"label": "免票人次",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"reportID": {
+			"bsonType": "string",
+			"description": "填报人工号",
+			"label": "填报人工号",
+			"foreignKey":"user.ID",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},"month": {
+			"bsonType": "string",
+			"description": "月份",
+			"label": "月份",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"report_date": {
+			"bsonType": "timestamp",
+			"label": "填报时间",
+			"forceDefaultValue": {
+				"$env": "now"
+			},
+			"componentForEdit": {
+				"name": "uni-dateformat"
+			}
+		}
+		
+	}
+}

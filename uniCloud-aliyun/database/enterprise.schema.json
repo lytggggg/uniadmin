@@ -1,0 +1,74 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"USCC": {
+			"bsonType": "string",
+			"description": "统一标识",
+			"label": "统一标识",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"enterprise_Name": {
+			"bsonType": "string",
+			"description": "单位名称",
+			"label": "单位名称",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"enterprise_Address": {
+			"bsonType": "string",
+			"description": "单位地址",
+			"label": "单位地址",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"enterprise_Leader": {
+			"bsonType": "string",
+			"description": "单位领导人",
+			"label": "单位领导人",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"enterprise_type": {
+			"bsonType": "string",
+			"description": "单位类型",
+			"label": "单位类型",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"enterprise_nature": {
+			"bsonType": "string",
+			"description": "单位性质",
+			"label": "单位性质",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"region_name": {
+			"bsonType": "string",
+			"description": "所在区县",
+			"label": "所在区县",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		}
+
+
+	}
+}

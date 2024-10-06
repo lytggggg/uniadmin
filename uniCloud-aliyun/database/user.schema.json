@@ -1,0 +1,52 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"ID": {
+			"description": "工号"
+		},
+		"name": {
+			"bsonType": "string",
+			"description": "姓名",
+			"label": "姓名",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"sex": {
+			"bsonType": "string",
+			"description": "性别",
+			"label": "性别",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"tel": {
+			"bsonType": "string",
+			"description": "联系方式",
+			"label": "联系方式",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		},
+		"enterprise_in": {
+			"bsonType": "string",
+			"description": "所属单位",
+			"label": "所属单位",
+			"foreignKey": "enterprise.USCC",
+			"componentForEdit": {
+				"name": "uni-easyinput"
+			}
+		}
+	}
+}
